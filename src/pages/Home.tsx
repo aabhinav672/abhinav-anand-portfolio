@@ -31,7 +31,7 @@ export default function Home() {
             </div>
           </div>
 
-          <ProfilePhoto className="h-44 w-44 sm:h-56 sm:w-56" />
+          <ProfilePhoto className="h-52 w-52 sm:h-64 sm:w-64" />
         </div>
 
         <div className="border-t border-slate-200">

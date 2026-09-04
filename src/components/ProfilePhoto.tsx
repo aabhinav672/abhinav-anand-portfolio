@@ -19,7 +19,7 @@ export default function ProfilePhoto({ className = "" }: ProfilePhotoProps) {
 
   return (
     <div
-      className={`flex shrink-0 items-center justify-center overflow-hidden rounded-full bg-gradient-to-br from-brand-500 to-indigo-600 shadow-lg ring-4 ring-white ${className}`}
+      className={`flex shrink-0 items-center justify-center overflow-hidden rounded-3xl bg-gradient-to-br from-brand-500 to-indigo-600 shadow-lg ring-4 ring-white ${className}`}
     >
       {!imageFailed ? (
         <img
