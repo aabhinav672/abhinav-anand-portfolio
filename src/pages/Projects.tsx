@@ -1,4 +1,5 @@
 import PageHero from "../components/PageHero";
+import ProjectThumb from "../components/ProjectThumb";
 import { projects } from "../data/projects";
 
 export default function Projects() {
@@ -14,7 +15,12 @@ export default function Projects() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
             <article key={project.title} className="card flex flex-col overflow-hidden">
-              <div className={`h-36 w-full bg-gradient-to-br ${project.gradient}`} />
+              <ProjectThumb
+                image={project.image}
+                gradient={project.gradient}
+                title={project.title}
+                className="h-36 w-full"
+              />
               <div className="flex flex-1 flex-col p-6">
                 <h2 className="text-lg font-semibold text-slate-900">{project.title}</h2>
                 <p className="mt-2 flex-1 text-sm text-slate-500">{project.description}</p>

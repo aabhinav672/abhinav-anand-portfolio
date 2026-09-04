@@ -8,7 +8,7 @@ export const siteConfig = {
   photoUrl: assetUrl("profile.jpg"),
   email: "aabhinav672@gmail.com",
   phone: "+91-8409494102",
-  location: "New Town, Kolkata, India",
+  location: "Pune, Maharashtra, India",
   navLinks: [
     { label: "Home", to: "/" },
     { label: "About", to: "/about" },
@@ -18,7 +18,7 @@ export const siteConfig = {
     { label: "Contact", to: "/contact" },
   ],
   socialLinks: [
-    { label: "GitHub", href: "https://github.com/", icon: "github" },
+    { label: "GitHub", href: "https://github.com/aabhinav672", icon: "github" },
     {
       label: "LinkedIn",
       href: "https://www.linkedin.com/in/abhinav-anand95a9b11b6/",

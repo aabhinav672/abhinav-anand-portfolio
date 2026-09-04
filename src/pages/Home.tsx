@@ -3,6 +3,7 @@ import { siteConfig } from "../data/site";
 import { projects } from "../data/projects";
 import Icon from "../components/Icon";
 import ProfilePhoto from "../components/ProfilePhoto";
+import ProjectThumb from "../components/ProjectThumb";
 
 const highlights = [
   { label: "Years of experience", value: "3+" },
@@ -63,7 +64,12 @@ export default function Home() {
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.slice(0, 3).map((project) => (
             <article key={project.title} className="card overflow-hidden">
-              <div className={`h-32 w-full bg-gradient-to-br ${project.gradient}`} />
+              <ProjectThumb
+                image={project.image}
+                gradient={project.gradient}
+                title={project.title}
+                className="h-32 w-full"
+              />
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-slate-900">{project.title}</h3>
                 <p className="mt-2 text-sm text-slate-500">{project.description}</p>
